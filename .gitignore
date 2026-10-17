@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+dist/
+tmp/
+.runtime/
+*.log
+__pycache__/
+*.pyc
+*.key
+*.pem
+*.crt
+validation/*QA.pptx

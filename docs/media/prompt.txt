@@ -1,0 +1,3 @@
+Built-in imagegen, ads-marketing, portrait 4:5. Warm off-white editorial product poster with indigo accents and the existing sigma icon.
+Exact copy: 给 Mac 的两个小工具 · 01 / SlideTeX / 把 LaTeX 放进 PPT / 输入公式 → 实时预览 → 插入高清 PNG / PowerPoint · WPS 演示 / 顶部功能区入口 / 透明背景 · 300 / 600 / 1200 DPI / 本机生成，不上传公式 / github.com/Yuwangzhi/slidetex-mac
+Conceptual E = mc^2 input converted to E = mc² on a transparent image. No fake app screenshot, QR code, extra feature claims or watermark.

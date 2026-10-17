@@ -1,0 +1,16 @@
+name: Tests
+on:
+  push:
+  pull_request:
+jobs:
+  render-and-host-contracts:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm test
+      - run: node --check web/app.js && node --check web/host.js

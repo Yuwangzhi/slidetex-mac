@@ -1,0 +1,19 @@
+{
+  "name": "slidetex-mac",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LaTeX to high-resolution PNG ribbon add-ins for PowerPoint and WPS on macOS",
+  "type": "module",
+  "engines": { "node": ">=20.9" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "install:mac": "python3 scripts/install.py",
+    "uninstall:mac": "python3 scripts/install.py --uninstall"
+  },
+  "overrides": { "@xmldom/xmldom": "0.9.12" },
+  "dependencies": {
+    "mathjax-full": "3.2.2",
+    "sharp": "0.35.5"
+  }
+}

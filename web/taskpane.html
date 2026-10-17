@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SlideTeX · LaTeX 公式</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/host.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="brand"><div class="mark" aria-hidden="true">∑</div><div><h1>SlideTeX</h1><p>让公式清晰地进入幻灯片</p></div><span id="host" class="badge">连接中</span></header>
+  <main>
+    <section class="editor-section">
+      <div class="section-title"><label for="latex">LaTeX 公式</label><button id="clear" class="text-button" type="button">清空</button></div>
+      <textarea id="latex" spellcheck="false" aria-describedby="editor-hint" placeholder="例如：E = mc^2">E = mc^2</textarea>
+      <p class="hint" id="editor-hint">直接输入公式，也支持 $…$、\[…\]。</p>
+      <div id="templates" class="templates" aria-label="公式模板">
+        <button data-template="fraction">分式</button><button data-template="sum">求和</button><button data-template="matrix">矩阵</button><button data-template="cases">分段</button><button data-template="aligned">多行</button>
+      </div>
+    </section>
+    <section class="preview-section">
+      <div class="section-title"><span>预览</span><span class="live" id="preview-state">实时更新</span></div>
+      <div id="preview" class="preview checker"><span class="placeholder">正在生成公式…</span></div>
+      <div id="dimensions" class="dimensions">透明背景 · 600 DPI</div>
+    </section>
+    <section class="settings" aria-label="图片设置">
+      <div class="field"><label for="fontSize">幻灯片字号</label><div class="input-unit"><input id="fontSize" type="number" min="8" max="96" value="28"><span>pt</span></div></div>
+      <div class="field"><label for="dpi">图片清晰度</label><select id="dpi"><option value="300">300 DPI</option><option value="600" selected>600 DPI · 推荐</option><option value="1200">1200 DPI</option></select></div>
+      <div class="field"><label for="color">公式颜色</label><div class="color-row"><input id="color" type="color" value="#111827"><button id="black" class="swatch black" title="黑色公式" aria-label="黑色公式"></button><button id="white" class="swatch white" title="白色公式" aria-label="白色公式"></button></div></div>
+      <div class="field"><label for="background">图片背景</label><select id="background"><option value="transparent">透明</option><option value="white">白色</option><option value="dark">深色</option></select></div>
+    </section>
+    <div class="checkbox-row"><label><input id="display" type="checkbox" checked> 展示模式（大求和与上下限）</label></div>
+    <section class="actions">
+      <button id="insert" class="primary" disabled>插入到当前幻灯片 <span>⌘↵</span></button>
+      <div class="secondary-actions"><button id="load" disabled>读取选中公式</button><button id="download" disabled>导出 PNG</button></div>
+      <label class="replace-option"><input id="replace" type="checkbox"> 替换读取的原公式（保留位置）</label>
+    </section>
+    <p id="message" role="status" aria-live="polite" class="message">正在连接…</p>
+    <details><summary>最近使用</summary><div id="history" class="history"></div></details>
+  </main>
+  <footer><span>本地生成 · 公式不上传</span><span>v0.1</span></footer>
+</body>
+</html>

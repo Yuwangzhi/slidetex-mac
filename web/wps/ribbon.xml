@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="SlideTeXOnLoad">
+  <ribbon startFromScratch="false"><tabs><tab id="SlideTeXTab" label="SlideTeX"><group id="SlideTeXEquations" label="高清公式">
+    <button id="SlideTeXEditor" label="LaTeX 公式" size="large" onAction="SlideTeXOpen" getImage="SlideTeXIcon" screentip="输入 LaTeX，插入高清透明 PNG"/>
+  </group></tab></tabs></ribbon>
+</customUI>

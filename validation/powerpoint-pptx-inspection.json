@@ -1,0 +1,25 @@
+{
+  "file": "SlideTeX-PowerPoint-QA.pptx",
+  "pictures": [
+    {
+      "name": "ppt/media/image2.png",
+      "width": 2085,
+      "height": 598,
+      "dpi": 600,
+      "source_in_png": true
+    },
+    {
+      "name": "ppt/media/image1.png",
+      "width": 948,
+      "height": 276,
+      "dpi": 600,
+      "source_in_png": true
+    }
+  ],
+  "source_tags": [
+    {
+      "name": "SLIDETEX_SOURCE",
+      "val": "{\"version\":1,\"latex\":\"\\\\begin{aligned} \\\\mathcal{L} &= \\\\mathcal{L}_{\\\\mathrm{pred}} + \\\\lambda\\\\mathcal{L}_{\\\\mathrm{reg}} \\\\\\\\ \\\\theta_{t+1} &= \\\\theta_t - \\\\eta\\\\nabla_{\\\\theta}\\\\mathcal{L} \\\\end{aligned}\",\"fontSize\":28,\"dpi\":600,\"color\":\"#111827\",\"background\":\"transparent\",\"display\":true}"
+    }
+  ]
+}

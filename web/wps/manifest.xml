@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JsPlugin>
+  <ApiVersion>1.0.0</ApiVersion>
+  <Name>SlideTeX</Name>
+  <Description>LaTeX 公式转高清透明 PNG</Description>
+</JsPlugin>
